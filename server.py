@@ -57,6 +57,6 @@ class Generator(http.server.BaseHTTPRequestHandler):
 
 with socketserver.TCPServer(("", PORT), Generator) as httpd:
     print("serving at port", PORT)
-    print("Please open your web browser and navigate to localhost:8000")
+    print("Please open your web browser and navigate to localhost:8080")
     httpd.serve_forever()
     
